@@ -124,6 +124,10 @@ position = Vector2( 486.094, 460.61 )
 position = Vector2( 485.151, 353.48 )
 scale = Vector2( 0.917789, 1 )
 
+[node name="Uck5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 189.719, 431.349 )
+scale = Vector2( 0.917789, 1 )
+
 [node name="Uck2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 304.399, 107.13 )
 scale = Vector2( 0.917789, 1 )
