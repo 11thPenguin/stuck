@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://stuck_dynamicfont-24.tres" type="DynamicFont" id=1]
+[ext_resource path="res://stuck_dynamicfont-72.tres" type="DynamicFont" id=2]
+[ext_resource path="res://stuck_dynamicfont-12.tres" type="DynamicFont" id=3]
+[ext_resource path="res://scripts/startscreen.gd" type="Script" id=4]
+
+[node name="StartScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 282.056
+margin_top = 73.0561
+margin_right = 771.056
+margin_bottom = 565.056
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelLabel" type="Label" parent="."]
+margin_left = 366.223
+margin_top = 75.5098
+margin_right = 686.223
+margin_bottom = 209.51
+custom_fonts/font = ExtResource( 2 )
+text = "Level 0"
+
+[node name="GoalLabel" type="Label" parent="."]
+margin_left = 476.656
+margin_top = 318.085
+margin_right = 600.656
+margin_bottom = 341.085
+custom_fonts/font = ExtResource( 3 )
+text = "COLLECT 4 UCK"
+
+[node name="BeginButton" type="Button" parent="."]
+margin_left = 488.454
+margin_top = 492.23
+margin_right = 605.454
+margin_bottom = 544.23
+custom_fonts/font = ExtResource( 1 )
+text = "BEGIN"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="BeginButton" to="." method="_on_BeginButton_pressed"]

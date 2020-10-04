@@ -1,0 +1,25 @@
+TODO
+====
+* Enemies
+* Dropping gluck --> UCK (?!!)
+* Levels that aren't me just randomly clicking
+* SFX
+* Better UCK texture
+* More interesting BG tiles (shapes)
+* Better tile textures
+* BG texture
+* Bonus (?) for collecting UCK with multiple tentacles?
+* Momentum?
+* Wheel?
+* Retract tentacle?
+* Tentacle targeting reticle?
+* Level loading redux
+* Particle effect for UCK picup?
+* Glucks should auto balance (faster as they complete?)
+
+
+DONE
+====
+* Multiple levels
+* Title screen
+* Level complete screen

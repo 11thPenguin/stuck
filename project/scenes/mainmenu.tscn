@@ -1,0 +1,125 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://stuck_dynamicfont-24.tres" type="DynamicFont" id=1]
+[ext_resource path="res://stuck_dynamicfont-72.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scripts/mainmenu.gd" type="Script" id=3]
+[ext_resource path="res://stuck_dynamicfont-12.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/gluck-mm.png" type="Texture" id=5]
+[ext_resource path="res://assets/stuck-mm.png" type="Texture" id=6]
+[ext_resource path="res://assets/ring-mm.png" type="Texture" id=7]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.943909
+margin_right = -0.943909
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1026.0
+margin_bottom = 601.0
+color = Color( 0.054902, 0.121569, 0.305882, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="stuck-mm" type="Sprite" parent="."]
+position = Vector2( 166.637, 139.37 )
+scale = Vector2( 0.99, 0.99 )
+texture = ExtResource( 6 )
+
+[node name="gluck-mm" type="Sprite" parent="."]
+position = Vector2( 889.211, 422.16 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 5 )
+
+[node name="ring-mm" type="Sprite" parent="."]
+position = Vector2( 133.871, 405.388 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 7 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 311.478
+margin_top = -0.403183
+margin_right = 750.478
+margin_bottom = 133.597
+custom_fonts/font = ExtResource( 2 )
+text = "Saint Uck"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Overview" type="Label" parent="."]
+margin_left = 333.187
+margin_top = 147.808
+margin_right = 728.187
+margin_bottom = 508.808
+custom_fonts/font = ExtResource( 4 )
+text = "In the City of Muck there was all kinds of UCK
+They just couldn't truck with the UCK run amok
+But it happens the people of Muck were in luck!
+
+Saint Uck could get stuck, and he sucked up the UCK
+He transformed it to gluck, to then orbit his chuck.
+He looped it in rings! He called it his fluck!
+
+Baddies would come and his gluck try to shuck
+But he'd always duck, and avoid their mean pluck.
+
+
+Get St. Uck in a loop!
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="."]
+margin_left = 482.319
+margin_top = 518.186
+margin_right = 572.319
+margin_bottom = 570.186
+custom_fonts/font = ExtResource( 1 )
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 237.962
+margin_top = 350.208
+margin_right = 277.962
+margin_bottom = 373.208
+custom_fonts/font = ExtResource( 4 )
+text = "LMB"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 20.7655
+margin_top = 560.67
+margin_right = 105.766
+margin_bottom = 583.67
+custom_fonts/font = ExtResource( 4 )
+text = "11thPenguin"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 908.072
+margin_top = 562.915
+margin_right = 1007.07
+margin_bottom = 585.915
+custom_fonts/font = ExtResource( 4 )
+text = "Rococo Media"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
